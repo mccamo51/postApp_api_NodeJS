@@ -11,6 +11,10 @@ const postSchema = mongoose.Schema({
     description:{
         type:String
     },
+    imageUrl:{
+        type:String,
+        required: true
+    },
     users: { type: mongoose.Schema.Types.ObjectId, ref: 'todousers' }, // Reference to User model
 
 })
